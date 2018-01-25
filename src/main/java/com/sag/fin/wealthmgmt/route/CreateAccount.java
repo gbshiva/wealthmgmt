@@ -20,7 +20,7 @@ import com.sag.fin.wealthmgmt.model.*;
 @Path("/account")
 @Produces("application/json")
 
-public class CreateAccount {
+public class CreateAccount implements Route {
 	
 	@POST
 	@ApiOperation(value = "Creates a new account for the user", nickname="CreateUserRoute")

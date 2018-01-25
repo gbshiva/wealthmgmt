@@ -21,7 +21,7 @@ import com.sag.fin.wealthmgmt.model.*;
 @Api
 @Path("/account/{id}/detail")
 @Produces("application/json")
-public class GetAccountDetails {
+public class GetAccountDetails implements Route{
 	@GET
 	@ApiOperation(value = "Get Detailed Account View Including latest Balances , Holdings and Performance. ", nickname = "GetAccountDetailRoute")
 	@ApiImplicitParams({ //

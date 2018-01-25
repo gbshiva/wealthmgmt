@@ -21,7 +21,7 @@ import com.sag.fin.wealthmgmt.model.*;
 @Api
 @Path("/account/{id}/summary")
 @Produces("application/json")
-public class GetAccountSummary {
+public class GetAccountSummary implements Route{
 	@GET
 	@ApiOperation(value = "Get Account Summary.", nickname = "GetAccountSummaryRoute")
 	@ApiImplicitParams({ //
