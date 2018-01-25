@@ -23,10 +23,16 @@ public class UserMgmt {
 	   public static UserMgmt getInstance() {
 	      if(instance == null) {
 	         instance = new UserMgmt();
+	         instance.loadData();
 	      }
+	      
 	      return instance;
 	   }
 	   
+	   public void loadData(){
+		   list.put("AF98405", new User("Sam", "Matthew", "4 Cornell Dr", "Jacksonville", "FL","USA", "32003"));
+		   list.put("AC8424D", new User("Sara","Johnson","6 Hollywood Dr","LA","CA","USA","90001"));
+	   }
 	   public String createUser(Request request){
 		   User usr = jsontoObj(request.body());
 		   if ( usr.getFirstName().isEmpty() ){
