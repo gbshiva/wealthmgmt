@@ -23,7 +23,7 @@ import com.sag.fin.wealthmgmt.model.*;
 public class CreateAccount implements Route {
 	
 	@POST
-	@ApiOperation(value = "Creates a new account for the user", nickname="CreateUserRoute")
+	@ApiOperation(value = "Creates a new account for the user", nickname="CreateAccountRoute")
 	@ApiImplicitParams({ //
 			@ApiImplicitParam(required = true, dataType = "com.sag.fin.wealthmgmt.model.Account", paramType = "body") //
 	}) //
